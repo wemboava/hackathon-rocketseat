@@ -1,5 +1,5 @@
-import React from "react";
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   height: 5000px;
@@ -34,9 +34,9 @@ const Cover = styled.div`
     position: absolute;
     bottom: 100px;
     left: 100px;
-    background-color: rgba(0, 0, 0, .5);
-    color: #FFF;
-    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px 50px;
     text-align: start;
     & h1 {
       margin: 0;
@@ -49,9 +49,9 @@ const Cover = styled.div`
       width: 164px;
       height: 50px;
       border: none;
-      background: #E86A5C;
+      background: #e86a5c;
       font-weight: bold;
-      color: #FFF;
+      color: #fff;
       font-size: 1.1em;
       margin-top: 5px;
     }
@@ -99,7 +99,10 @@ export default props => {
       <Cover>
         <div className="cover-box">
           <h1>ESCOLA CONECTADA</h1>
-          <p>Lorem ipsum dolor init Lorem ipsum dolor init Lorem ipsum dolor init dolor init</p>
+          <p>
+            Lorem ipsum dolor init Lorem ipsum dolor init Lorem ipsum dolor init
+            dolor init
+          </p>
           <button>CADASTRO</button>
         </div>
         <ArrowIcon onClick={showDown}>
@@ -108,6 +111,7 @@ export default props => {
           </svg>
         </ArrowIcon>
       </Cover>
+
       <Content>
         <div className="for-school">
           <div className="for-school__info">
@@ -118,6 +122,7 @@ export default props => {
           <div className="for-school__image"></div>
         </div>
       </Content>
+
     </Container>
   );
-}
+};
