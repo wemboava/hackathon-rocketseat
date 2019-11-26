@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import IndexRouter from '../src/route';
+import IndexRouter from './route';
+
+import GlobalStyles from './styles/global';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <IndexRouter />
-    </div>
+    <>
+      <GlobalStyles />
+      <div className="App">
+        <header className="App-header" />
+        <IndexRouter />
+      </div>
+    </>
   );
 }
 
