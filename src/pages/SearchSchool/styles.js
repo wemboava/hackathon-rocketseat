@@ -1,36 +1,75 @@
 import styled from 'styled-components';
+import { Input } from '@rocketseat/unform';
 
 export const Container = styled.div`
   width: 70%;
   margin: 15px auto 0;
   text-align: left;
 
+  h1 {
+    margin-top: 20px;
+  }
+
   form {
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
 
-    input {
-      background: rgba(0, 0, 0, 0.1);
-      border: 0;
-      height: 28px;
-      border-radius: 4px;
-      padding: 0 12px;
-      margin-right: 8px;
+    button {
+      margin-right: 20px;
     }
 
-    > button {
-      width: 100px;
-      height: 28px;
-      font-weight: bold;
+    small {
       color: #333;
-      border-radius: 4px;
-      border: 0;
-      font-size: 16px;
-      transition: background 0.2s;
-
-      &:hover {
-        cursor: pointer;
-      }
     }
+  }
+`;
+
+export const SearchInput = styled(Input)`
+  border: 1px solid #ddd;
+  height: 28px;
+  color: #424242;
+  padding: 0 8px;
+  margin-right: 12px;
+  width: ${props => props.widthSize && props.widthSize}px;
+`;
+
+export const Grid = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  margin-top: 30px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: 16px;
+      color: #333;
+      text-transform: capitalize;
+      margin-top: 5px;
+    }
+
+    > div {
+      margin-top: 4px;
+    }
+
+    img {
+      border-radius: 4px;
+    }
+  }
+`;
+
+export const Info = styled.div`
+  display: flex;
+  align-items: center;
+
+  margin-top: 5px;
+
+  span {
+    font-size: 14px;
+    margin-left: 5px;
   }
 `;
