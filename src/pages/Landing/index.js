@@ -1,5 +1,8 @@
 import React from 'react';
 import { Form, Input } from '@rocketseat/unform';
+
+import api from '../../services/api';
+
 import { Info, ArrowIcon, Cover, Content, Container, Footer } from './styles';
 
 export default () => {
@@ -10,8 +13,8 @@ export default () => {
     });
   }
 
-  function onSubmit() {
-    console.log('submit');
+  async function onSubmit(data) {
+    await api.post('/school', data);
   }
 
   return (
@@ -139,12 +142,15 @@ export default () => {
           </div>
           <div className="register__form">
             <Form onSubmit={onSubmit}>
-              <Input name="name" placeholder="Nome do responsável" />
+              <Input
+                name="responsible_name"
+                placeholder="Nome do responsável"
+              />
 
               <Input name="email" placeholder="E-mail" />
-              <Input name="schoolName" placeholder="Nome Empresa / Escola" />
-              <Input name="name" placeholder="Nome da Escola" />
-              <Input name="tel" placeholder="Telefone do responsável" />
+              <Input name="name" placeholder="Nome Empresa / Escola" />
+              {/* <Input name="name" placeholder="Nome da Escola" /> */}
+              <Input name="phone" placeholder="Telefone do responsável" />
 
               <div>
                 <Input name="city" placeholder="Cidade" />
@@ -152,8 +158,8 @@ export default () => {
               </div>
 
               <Input name="neighborhood" placeholder="Bairro" />
-              <Input name="street" placeholder="Endereço" />
-              <Input name="complement" placeholder="Complemento" />
+              <Input name="address1" placeholder="Endereço" />
+              <Input name="address2" placeholder="Complemento" />
               <div className="register__form__actions">
                 <button type="submit">Cadastrar</button>
               </div>
