@@ -51,13 +51,14 @@ const Content = styled.div`
         display: flex;
         flex-direction: column;
         input {
-          background: rgba(0, 0, 0, 0.1);
-          border: 0;
-          height: 28px;
-          border-radius: 4px;
-          padding: 0 12px;
           margin: 10px;
           margin-right: 8px;
+
+          border: 1px solid #ddd;
+          height: 28px;
+          color: #424242;
+          padding: 0 8px;
+          margin-right: 12px;
         }
       }
     }
@@ -103,6 +104,22 @@ const Content = styled.div`
         margin: 20px 0;
         font-weight: 200;
         line-height: 39px;
+      }
+
+      a {
+        padding: 15px 25px;
+        width: 140px;
+        height: 40px;
+        border: none;
+        background: #e86a5c;
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.1em;
+        margin-top: 5px;
+        margin-right: 8px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
     &__image {

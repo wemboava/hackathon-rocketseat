@@ -1,0 +1,49 @@
+{
+  "school": [
+    {
+      "_id": "5dddf45464040a40165d239e",
+      "responsible_name": "Ricardo Godoy",
+      "email": "a@a.com",
+      "name": "Rocketseat",
+      "phone": "(11) 98212-7249",
+      "state": "SP",
+      "city": "São Paulo",
+      "neighborhood": "Ipiranga",
+      "address1": "Rua x, 1000",
+      "address2": "fundos",
+      "createdAt": "2019-11-27T03:58:12.610Z",
+      "updatedAt": "2019-11-27T03:58:12.610Z",
+      "__v": 0
+    },
+    {
+      "_id": "5dddf6381b27864256a6d6ed",
+      "responsible_name": "Ricardo Godoy",
+      "email": "a@a.com",
+      "name": "Rocketseat",
+      "phone": "(11) 98212-7249",
+      "state": "RJ",
+      "city": "Rio de Janeiro",
+      "neighborhood": "Ipiranga",
+      "address1": "Rua x, 1000",
+      "address2": "fundos",
+      "createdAt": "2019-11-27T04:06:16.036Z",
+      "updatedAt": "2019-11-27T04:06:16.036Z",
+      "__v": 0
+    },
+    {
+      "_id": "5dddf6451b27864256a6d6ee",
+      "responsible_name": "Ricardo Godoy",
+      "email": "a@a.com",
+      "name": "Rocketseat",
+      "phone": "(11) 98212-7249",
+      "state": "SP",
+      "city": "Campinas",
+      "neighborhood": "Ipiranga",
+      "address1": "Rua x, 1000",
+      "address2": "fundos",
+      "createdAt": "2019-11-27T04:06:29.958Z",
+      "updatedAt": "2019-11-27T04:06:29.958Z",
+      "__v": 0
+    }
+  ]
+}

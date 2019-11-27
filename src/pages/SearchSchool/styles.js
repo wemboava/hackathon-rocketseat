@@ -79,25 +79,25 @@ export const Grid = styled.ul`
   }
 
   margin-top: 30px;
+`;
 
-  li {
-    display: flex;
-    flex-direction: column;
+export const School = styled.li`
+  display: flex;
+  flex-direction: column;
 
-    strong {
-      font-size: 16px;
-      color: #333;
-      text-transform: capitalize;
-      margin-top: 5px;
-    }
+  strong {
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 5px;
+  }
 
-    > div {
-      margin-top: 4px;
-    }
+  > div {
+    margin-top: 4px;
+  }
 
-    img {
-      border-radius: 4px;
-    }
+  img {
+    border-radius: 4px;
   }
 `;
 
