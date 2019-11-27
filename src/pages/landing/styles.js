@@ -1,12 +1,67 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  height: 5000px;
-`;
+const Container = styled.div``;
 
 const Content = styled.div`
   max-width: 1000px;
   margin: auto;
+
+  .register {
+    margin-top: 100px;
+    display: flex;
+    &__info {
+      width: 50%;
+      color: #4b4b4b;
+      & > h2 {
+        font-size: 2.2em;
+        font-weight: bold;
+      }
+      & > p {
+        width: 400px;
+        font-size: 1.5em;
+        margin: 20px 0;
+        font-weight: 200;
+        line-height: 39px;
+      }
+    }
+
+    &__form {
+      margin-bottom: 50px;
+      &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        > button {
+          width: 140px;
+          height: 40px;
+          border: none;
+          background: #e86a5c;
+          font-weight: bold;
+          color: #fff;
+          font-size: 1.1em;
+          margin-top: 5px;
+          margin-right: 8px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      form {
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        input {
+          background: rgba(0, 0, 0, 0.1);
+          border: 0;
+          height: 28px;
+          border-radius: 4px;
+          padding: 0 12px;
+          margin: 10px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
 
   .for-school {
     display: flex;
@@ -27,7 +82,9 @@ const Content = styled.div`
       }
     }
     &__image {
-      width: 50%;
+      width: 47%;
+      object-fit: cover;
+      margin-left: 20px;
     }
   }
   .for-company {
@@ -58,7 +115,7 @@ const Content = styled.div`
 
 const Cover = styled.div`
   width: 100%;
-  height: calc(100vh - 50px);
+  height: 100vh;
   background-image: url(${require('../../images/landing-cover.jpeg')});
   background-position: center;
   background-size: cover;
@@ -185,4 +242,10 @@ const Info = styled.div`
   }
 `;
 
-export { Info, ArrowIcon, Cover, Content, Container };
+const Footer = styled.div`
+  width: 100%;
+  height: 304px;
+  background: #fa8072;
+`;
+
+export { Info, ArrowIcon, Cover, Content, Container, Footer };

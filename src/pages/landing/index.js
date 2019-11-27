@@ -1,5 +1,6 @@
 import React from 'react';
-import { Info, ArrowIcon, Cover, Content, Container } from './styles';
+import { Form, Input } from '@rocketseat/unform';
+import { Info, ArrowIcon, Cover, Content, Container, Footer } from './styles';
 
 export default () => {
   function showDown() {
@@ -7,6 +8,10 @@ export default () => {
       top: window.innerHeight,
       behavior: 'smooth',
     });
+  }
+
+  function onSubmit() {
+    console.log('submit');
   }
 
   return (
@@ -54,7 +59,11 @@ export default () => {
             </p>
             <p>Lorem ipsum dolor init Lorem ipsum dolor init dolor init</p>
           </div>
-          <div className="for-school__image" />
+          <img
+            className="for-school__image"
+            alt="school-image1"
+            src={require('../../images/school.png')}
+          />
         </div>
       </Content>
       <Info>
@@ -113,7 +122,51 @@ export default () => {
         </div>
       </Info>
 
-      <Content>...</Content>
+      <Content>
+        <div className="register">
+          <div className="register__info">
+            <h2>VENHA PARA WLT DISCOVER</h2>
+            <p>
+              Lorem ipsum dolor init Lorem ipsum dolor init Lorem ipsum dolor
+              init dolor initLorem ipsum dolor init Lorem ipsum dolor init Lorem
+              ipsum dolor init dolor init Lorem ipsum dolor init Lorem ipsum
+              dolor init Lorem ipsum dolor init dolor init
+            </p>
+            <p>
+              Lorem ipsum dolor init Lorem ipsum dolor init dolor init dolor
+              init Lorem ipsum dolor init dolor init
+            </p>
+          </div>
+          <div className="register__form">
+            <Form onSubmit={onSubmit}>
+              <Input name="name" placeholder="Nome do responsável" />
+
+              <Input name="email" placeholder="E-mail" />
+              <Input name="schoolName" placeholder="Nome Empresa / Escola" />
+              <Input name="name" placeholder="Nome da Escola" />
+              <Input name="tel" placeholder="Telefone do responsável" />
+
+              <div>
+                <Input name="city" placeholder="Cidade" />
+                <Input name="state" placeholder="Estado" />
+              </div>
+
+              <Input name="neighborhood" placeholder="Bairro" />
+              <Input name="street" placeholder="Endereço" />
+              <Input name="complement" placeholder="Complemento" />
+              <div className="register__form__actions">
+                <button type="submit">Cadastrar</button>
+              </div>
+            </Form>
+          </div>
+        </div>
+        <img
+          className="team"
+          alt="team"
+          src={require('../../images/team.png')}
+        />
+      </Content>
+      <Footer />
     </Container>
   );
 };
