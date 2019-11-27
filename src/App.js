@@ -8,10 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <div className="App">
-        {/* <header className="App-header" /> */}
-        <IndexRouter />
-      </div>
+      <IndexRouter />
     </>
   );
 }
