@@ -116,9 +116,36 @@ const Content = styled.div`
 const Cover = styled.div`
   width: 100%;
   height: 100vh;
-  background-image: url(${require('../../images/landing-cover.jpeg')});
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.35) 16.67%,
+      rgba(0, 0, 0, 0.17) 100%
+    ),
+    url(${require('../../images/landing-cover.jpeg')});
   background-position: center;
   background-size: cover;
+
+  .header {
+    width: 100%;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    & > h2 {
+      font-size: 2em;
+      font-weight: 200;
+    }
+    & > ul {
+      list-style: none;
+      display: flex;
+      li {
+        font-size: 1.2em;
+        font-weight: 200;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
 
   .search-bg {
     background-image: url(${require('../../images/overlay.png')});
@@ -155,8 +182,8 @@ const Cover = styled.div`
 
   & .cover-box {
     position: absolute;
-    bottom: 100px;
-    left: 100px;
+    bottom: 50px;
+    left: 50px;
     color: #fff;
 
     & h1 {
@@ -179,6 +206,7 @@ const Cover = styled.div`
       font-size: 1.1em;
       margin-top: 5px;
       animation: 4.5s ease-in-out 0s normal none running showTitle;
+      cursor: pointer;
     }
   }
   @keyframes showTitle {
@@ -244,8 +272,30 @@ const Info = styled.div`
 
 const Footer = styled.div`
   width: 100%;
-  height: 304px;
   background: #fa8072;
+  margin-top: -4px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+  & > .column {
+    width: 220px;
+    color: #fff;
+    margin: 0 20px;
+
+    & > h2 {
+      font-size: 1.8em;
+      font-weight: 200;
+      margin-bottom: 20px;
+      line-height: 39px;
+    }
+    & > span,
+    & > p {
+      font-size: 1.2em;
+      font-weight: 100;
+      line-height: 25px;
+    }
+  }
 `;
 
 export { Info, ArrowIcon, Cover, Content, Container, Footer };

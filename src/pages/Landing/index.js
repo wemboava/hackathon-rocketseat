@@ -10,6 +10,13 @@ export default () => {
     });
   }
 
+  function scrollDown(size) {
+    window.scrollTo({
+      top: size,
+      behavior: 'smooth',
+    });
+  }
+
   function onSubmit() {
     console.log('submit');
   }
@@ -17,17 +24,25 @@ export default () => {
   return (
     <Container>
       <Cover>
+        <header className="header">
+          <h2>WLT DISCOVER</h2>
+          <ul>
+            {/* eslint-disable-next-line */}
+            <li onClick={() => scrollDown(650)}>PARA ESCOLA</li>
+            {/* eslint-disable-next-line */}
+            <li onClick={() => scrollDown(1600)}>PARA EMPRESA</li>
+            {/* eslint-disable-next-line */}
+            <li onClick={() => scrollDown(2500)}>CADASTRE - SE</li>
+          </ul>
+        </header>
         <div className="cover-box">
           <div className="search-container">
             <div className="search-bg" />
             <div className="search">
               <h1>ESCOLA CONECTADA</h1>
-              <p>
-                Lorem ipsum dolor init Lorem ipsum dolor init Lorem ipsum dolor
-                init dolor init
-              </p>
+              <p>Uma plataforma que conecta as escolas com seus mentores</p>
               {/* eslint-disable-next-line */}
-              <button>CADASTRO</button>
+              <button onClick={() => scrollDown(2500)}>CADASTRO</button>
             </div>
           </div>
         </div>
@@ -69,19 +84,19 @@ export default () => {
       <Info>
         <div className="item">
           <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <span>Encontre o profissional que precisa</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon2.svg')} />
+          <span>Inclusão Social</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon3.svg')} />
+          <span>Soluções de ensino para escola</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon4.svg')} />
+          <span>Tecnologias novas para agregar valor</span>
         </div>
       </Info>
       <Content>
@@ -105,20 +120,20 @@ export default () => {
       </Content>
       <Info secundary>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
+          <img alt="icon" src={require('../../images/icon6.svg')} />
           <span>Soluções para sua Escola</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon7.svg')} />
+          <span>Garanta a inclusão de seu produto em escolas</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon8.svg')} />
+          <span>Aprendizado para toda vida</span>
         </div>
         <div className="item">
-          <img alt="icon" src={require('../../images/icon.svg')} />
-          <span>Soluções para sua Escola</span>
+          <img alt="icon" src={require('../../images/icon9.svg')} />
+          <span>Garanta a inclusão social à tecnologia</span>
         </div>
       </Info>
 
@@ -166,7 +181,28 @@ export default () => {
           src={require('../../images/team.png')}
         />
       </Content>
-      <Footer />
+      <Footer>
+        <div className="column">
+          <h2>WLT DISCOVER</h2>
+          <p>Uma plataforma que conecta as escolas com seus mentores</p>
+        </div>
+        <div className="column">
+          <span>Home</span>
+          <span>Para Escola</span>
+          <span>Para Mentor/Empresa</span>
+          <span>Cadastro Login</span>
+        </div>
+        <div className="column">
+          <span>
+            Rua Rocketseat, 285
+            <br /> São Paulo - SP
+            <br /> 131287-219
+            <br /> contato@empresa.com.br
+            <br />
+            <br /> FACE - INSTA - TWITTER
+          </span>
+        </div>
+      </Footer>
     </Container>
   );
 };
