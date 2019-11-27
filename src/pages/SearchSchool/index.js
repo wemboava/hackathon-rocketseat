@@ -11,7 +11,7 @@ import { Container, SearchInput, Grid, Info } from './styles';
 
 export default function SearchSchool() {
   function onSubmit() {
-    console.log('submit');
+    // console.log('submit');
   }
 
   return (

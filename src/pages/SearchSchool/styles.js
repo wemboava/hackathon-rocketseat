@@ -6,6 +6,32 @@ export const Container = styled.div`
   margin: 15px auto 0;
   text-align: left;
 
+  @media (min-width: 768px) and (max-width: 1170px) {
+    width: 80%;
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+    padding: 0 15px;
+
+    h1 {
+      font-size: 18px;
+    }
+
+    form {
+      flex-direction: column;
+      input {
+        width: 100%;
+        margin: 5px auto;
+      }
+
+      button {
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+
   h1 {
     margin-top: 20px;
   }
@@ -38,6 +64,19 @@ export const Grid = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+
+  @media (min-width: 450px) and (max-width: 1170px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-top: 30px;
+    }
+  }
 
   margin-top: 30px;
 
