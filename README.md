@@ -9,60 +9,22 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+O projeto foi pensado em como unir escola e empresa, hoje a empresa que quer ou escola não sabem como ter está Ponte de contato 
 
-### `yarn test`
+É aí que entra a WLT (We Learn Together)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fazemos a ponte com uma plataforma aonde a escola e empresa se cadastram a escola diz o seu desejo é o que gostaria de mostrar pros alunos
 
-### `yarn build`
+Enquanto a empresa busca escolas que encaixam em seu perfil 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Enquanto a WLT faz o meio de campo mostrando como a escola se portar e a empresa como passar certos conteúdos 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Os benefícios são inúmeros, a escola ganha com novas tecnologias os alunos com conhecimento de tecnologia, mercado e podem sair com uma profissão, já que com uma possível falta de mercado no futuro a empresa que fizer a mentoria já poderá colher frutos como possíveis novos colaboradores que vão aprender a tecnologia daquela empresa então moldando conforme uma certa necessidade profissionais sem vícios e aptos a trabalhar na empresa 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Além disso motiva ainda mais alunos a fazerem isso por que poderão sair empregados da escola ou até mesmo como jovem aprendiz 
 
-### `yarn eject`
+Fora isso temos inúmeras outras vantagens tanto para escola alunos e empresas as possibilidades são infinitas 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Já que identificamos um problema é encontramos uma solução que dá base para o nome 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Todos aprendemos juntos (We Learn Together)
