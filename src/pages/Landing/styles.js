@@ -51,13 +51,14 @@ const Content = styled.div`
         display: flex;
         flex-direction: column;
         input {
-          background: rgba(0, 0, 0, 0.1);
-          border: 0;
-          height: 28px;
-          border-radius: 4px;
-          padding: 0 12px;
           margin: 10px;
           margin-right: 8px;
+
+          border: 1px solid #ddd;
+          height: 28px;
+          color: #424242;
+          padding: 0 8px;
+          margin-right: 12px;
         }
       }
     }
